@@ -1,3 +1,5 @@
+from pprint import pprint
+
 with open('recipes.txt', encoding='utf-8') as cook_file:
     cook_book = {}
     for line in cook_file:
@@ -29,4 +31,4 @@ def get_shop_list_by_dishes(dishes, person_count):
                                                                })
     return shop_list
 
-print(get_shop_list_by_dishes(['Омлет', 'Утка по-пекински', 'Фахитос'], 3))
+pprint(get_shop_list_by_dishes(['Омлет', 'Утка по-пекински', 'Фахитос'], 3))
